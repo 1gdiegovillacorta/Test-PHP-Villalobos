@@ -1,10 +1,10 @@
 <?php
 
-$hostname = "localhost";
-$port = "3306";
-$username = "root";
-$password = "";
-$dbname = "dscloudswift";
+$hostname = $_ENV["HOSTNAME"];
+$port = $_ENV["PORT"];
+$username = $_ENV["USERNAME"];
+$password = $_ENV["PASSWORD"];
+$dbname = $_ENV["DATABASE"];
 
 try {
     $conn = new PDO("mysql:host=$hostname;port=$port;dbname=$dbname", $username, $password);
