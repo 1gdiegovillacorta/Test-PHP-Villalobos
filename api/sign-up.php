@@ -1,11 +1,11 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en-US" translate="no">
 
 <?php
 
 include __DIR__ . "/../api/includes/heads/index_head.php";
-
-session_start();
 
 ?>
 
