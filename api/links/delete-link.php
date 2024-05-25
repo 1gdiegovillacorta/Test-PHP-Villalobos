@@ -9,6 +9,8 @@ if (isset($_GET["link_id"])) {
     $stmt = $conn->prepare($query);
     $stmt->bindParam(":linkId", $linkId);
     $stmt->execute();
-    header("Location: ./links.php");
+    echo "<script>
+        window.location = './links.php';
+    </script>";
     exit();
 }

@@ -9,6 +9,8 @@ if (isset($_GET["file_id"])) {
     $stmt = $conn->prepare($query);
     $stmt->bindParam(":fileId", $fileId);
     $stmt->execute();
-    header("Location: ./files.php");
+    echo "<script>
+        window.location = './files.php';
+    </script>";
     exit();
 }

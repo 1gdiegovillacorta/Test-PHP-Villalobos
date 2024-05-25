@@ -65,7 +65,7 @@ include __DIR__ . "/../api/includes/heads/index_head.php";
                 $_SESSION["lastName"] = $user["LastName"];
                 $_SESSION["email"] = $user["Email"];
                 echo "<script>
-                    window.location = 'home.php';
+                    window.location = './home.php';
                 </script>";
                 exit();
             } else {

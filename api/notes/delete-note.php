@@ -9,6 +9,8 @@ if (isset($_GET["note_id"])) {
     $stmt = $conn->prepare($query);
     $stmt->bindParam(":noteId", $noteId);
     $stmt->execute();
-    header("Location: ./notes.php");
+    echo "<script>
+        window.location = './notes.php';
+    </script>";
     exit();
 }
