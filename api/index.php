@@ -64,10 +64,10 @@ include __DIR__ . "/../api/includes/heads/index_head.php";
                 $_SESSION["name"] = $user["Name"];
                 $_SESSION["lastName"] = $user["LastName"];
                 $_SESSION["email"] = $user["Email"];
-                exit();
                 echo "<script>
                     window.location = 'home.php';
                 </script>";
+                exit();
             } else {
                 echo "<script>
                     const errorAlertContainer = document.getElementById('errorAlertContainer');
