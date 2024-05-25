@@ -18,6 +18,18 @@
       "dest": "/api/index.php"
     },
     {
+      "src": "/home.php",
+      "dest": "/api/home.php"
+    },
+    {
+      "src": "/sign-up.php",
+      "dest": "/api/sign-up.php"
+    },
+    {
+      "src": "/about.php",
+      "dest": "/api/about.php"
+    },
+    {
       "src": "/files/(.*)",
       "dest": "/api/files/$1"
     },
