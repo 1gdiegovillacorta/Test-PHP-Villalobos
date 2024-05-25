@@ -7,11 +7,13 @@
 
 include __DIR__ . "/../api/includes/heads/index_head.php";
 
+/*
 if (empty($_SESSION["userId"])) {
     echo "<script>
         window.location = './index.php';
     </script>";
 }
+*/
 
 ?>
 
